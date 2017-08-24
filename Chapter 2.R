@@ -11,6 +11,7 @@ hist(babiesborn)
 tbl <- table(babiesborn)
 cbind( Freq=table(babiesborn), Cumul=cumsum(table(babiesborn)), relative=prop.table(table(babiesborn)))
 
+qplot(babiesborn)
 
 # Textbook 2.3.8
 
