@@ -59,9 +59,14 @@ babiesborn <- c(30, 55, 27, 45, 56, 48, 45, 49, 32, 57, 47, 56,
 39, 56, 59, 58, 49, 53, 30, 53, 21, 34, 28, 50,
 52, 57, 43, 46, 54, 31, 22, 31, 24, 24, 57, 29)
 
-babiesborn(hist)
-babiesborn(
-	
-#A frequency distribution
-#A relative frequency distribution
-#A frequency polygon
+hist(babiesborn)
+
+table(babiesborn)
+transform(table(babiesborn)
+transform(freq_table,Rel_Freq=prop.table(Freq),Cum_Freq=cumsum(Freq))
+
+library(ggpolot2)
+dev.off()
+
+ggplot(babiesborn) +
+	  geom_freqpoly(binwidth=binsize)
