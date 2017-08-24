@@ -30,11 +30,11 @@ stem(fatgrams)
 
 #Problem 3
 
-milk <- c(33, 31, 67, 29, 17 38, 44, 25, 32, 52, 60, 35, 68, 21, 34)
+milk <- c(33, 31, 67, 29, 17, 38, 44, 25, 32, 52, 60, 35, 68, 21, 34)
 nomilk <- c(39, 47, 40, 15, 60, 71, 46, 42, 63, 20, 45, 66)
 
 stem(milk)
-stem(nonmilk)
+stem(nomilk)
 
 median(milk)
-median(nonmilk)
+median(nomilk)
