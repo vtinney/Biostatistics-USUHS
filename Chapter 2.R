@@ -61,3 +61,7 @@ babiesborn <- c(30, 55, 27, 45, 56, 48, 45, 49, 32, 57, 47, 56,
 
 babiesborn(hist)
 babiesborn(
+	
+#A frequency distribution
+#A relative frequency distribution
+#A frequency polygon
