@@ -5,8 +5,6 @@ edit
 
 # this will open the data editor. copy paste the below data into the first column
 
-rename var1 tsp
-
 68
 63 
 42 
@@ -65,6 +63,8 @@ rename var1 tsp
 49 
 12
 
+rename var1 tsp
+
 stem tsp
 
 ## Problem 2
@@ -72,8 +72,6 @@ stem tsp
 edit
 
 ## Use the "edit" command to open the data editor. Copy paste the below variables into the first column.
-
-rename var2 fatgrams
 
 22
 42
@@ -226,6 +224,8 @@ rename var2 fatgrams
 168
 153
 
+rename var2 fatgrams
+
 stem fatgrams 
 
 #Problem 3
@@ -233,8 +233,6 @@ stem fatgrams
 edit
 
 # this command opens the data editor and you can copy paste the below data into the first column
-
-rename var3 milk
 
 33
 31
@@ -252,13 +250,12 @@ rename var3 milk
 21
 34
 
+rename var3 milk
+
 edit
 
 # this command opens the data editor where you can copy paste the below data
 
-rename var4 nomilk
-
-input nomilk
 39
 47
 40
@@ -272,6 +269,8 @@ input nomilk
 45
 66
 68
+
+rename var4 nomilk
 
 stem milk
 stem nomilk
