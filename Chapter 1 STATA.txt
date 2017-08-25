@@ -1,7 +1,12 @@
 ## Chapter 1
 ## Problem 1
 
-input tsp
+edit
+
+# this will open the data editor. copy paste the below data into the first column
+
+rename var1 tsp
+
 68
 63 
 42 
@@ -60,17 +65,15 @@ input tsp
 49 
 12
 
-end
-
 stem tsp
 
 ## Problem 2
 
 edit
 
-## this dataset is too large for the input command. Use the "edit" command to open the data editor. Copy paste the below variables into the first column.
+## Use the "edit" command to open the data editor. Copy paste the below variables into the first column.
 
-rename var1 fatgrams
+rename var2 fatgrams
 
 22
 42
@@ -227,7 +230,11 @@ stem fatgrams
 
 #Problem 3
 
-input milk
+edit
+
+# this command opens the data editor and you can copy paste the below data into the first column
+
+rename var3 milk
 
 33
 31
@@ -245,7 +252,11 @@ input milk
 21
 34
 
-end
+edit
+
+# this command opens the data editor where you can copy paste the below data
+
+rename var4 nomilk
 
 input nomilk
 39
@@ -262,12 +273,11 @@ input nomilk
 66
 68
 
-end
-
 stem milk
 stem nomilk
 
-## need to change
-univar milk
-univar nomilk
-median(nomilk)
+tab milk
+tab nomilk
+
+summarize milk, detail
+summarize nomilk, detail
