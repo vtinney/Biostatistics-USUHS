@@ -5,3 +5,8 @@ Here you can find all of the problems for the homework Biostatistics I taught at
 
 Thanks!
 Veronica
+
+
+Helpful notes
+
+## is not part of the code. # is a symbol used to explain or make notes to the code. If you copy paste the # symbol to STATA, you will get an error message, but will get no error message in R.
