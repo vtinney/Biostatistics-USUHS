@@ -26,3 +26,14 @@
 
 	display 0.05/0.8
 
+## run code
+
+display 417/2720
+display 162/2720
+display 203/2720
+display (676/2720)+(166/2720)-(128/2720)
+display 1-(1796/2720)
+display 0.2/0.6
+display 0.35*0.86
+display 0.4+0.2-0.3
+display 0.05/0.8
