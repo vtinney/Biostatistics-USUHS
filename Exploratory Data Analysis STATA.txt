@@ -71,8 +71,6 @@ stem tsp
 
 edit
 
-## Use the "edit" command to open the data editor. Copy paste the below variables into the first column.
-
 22
 42
 37
@@ -232,8 +230,6 @@ stem fatgrams
 
 edit
 
-# this command opens the data editor and you can copy paste the below data into the first column
-
 33
 31
 67
@@ -253,8 +249,6 @@ edit
 rename var3 milk
 
 edit
-
-# this command opens the data editor where you can copy paste the below data
 
 39
 47
