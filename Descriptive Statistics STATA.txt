@@ -71,8 +71,6 @@ hist babiesborn
 
 tab babiesborn
 
-# need to test this twoway line tab babiesborn
-
 # Textbook 2.3.8
 
 edit
@@ -122,7 +120,7 @@ edit
 171.1
 248.3
 202.5
-195.1 
+195.1
 239.8
 222.0
 209.7
@@ -131,7 +129,7 @@ edit
 245.7
 212.5
 233.9
-214.4 
+214.4
 225.5
 213.0
 201.7
@@ -201,7 +199,8 @@ rename var5 haart
 summarize haart, detail
 tab haart
 
-display sd(haart)/mean(haart)*100 ## need to test
+display 74.62/193.61*100
+
 display sd(haart)/sqrt(haart) ## need to test
 
 
