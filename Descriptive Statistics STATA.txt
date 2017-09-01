@@ -201,7 +201,9 @@ tab haart
 
 display 74.62/193.61*100
 
-display sd(haart)/sqrt(haart) ## need to test
+display sqrt(haart)
+
+display 74.62/15.165
 
 
 # Textbook 2.5.5
@@ -227,5 +229,6 @@ rename var6 uti
 summarize uti, detail
 tab uti
 
-display sd(uti)/mean(uti)*100 ## need to test
-display sd(uti)/sqrt(uti) ## need to test
+display 10.78/16.307*100
+display sqrt(uti)
+display 10.78/4
