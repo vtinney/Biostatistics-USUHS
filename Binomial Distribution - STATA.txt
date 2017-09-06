@@ -1,0 +1,148 @@
+# Probability Distribution
+
+#4.3.1
+
+#part A
+
+display binomialp(20,3,0.24)
+
+#part B
+
+display binomialp(20,0,0.24)
+display binomialp(20,1,0.24)
+display binomialp(20,2,0.24)
+
+display 1 -(0.004133061+0.02610354+0.07831063)
+
+#part C
+
+display binomialp(20,0,0.24)
+display binomialp(20,1,0.24)
+display binomialp(20,2,0.24)
+
+display 0.004133061+0.02610354+0.07831063
+
+#part D
+
+display binomialp(20,3,0.24)
+display binomialp(20,4,0.24)
+display binomialp(20,5,0.24)
+display binomialp(20,6,0.24)
+display binomialp(20,7,0.24)
+
+display 0.148378+0.199139+0.2012352+0.1588699+0.1003389
+
+
+#4.3.4
+
+#part A
+
+display binomialp(15,2,0.32)
+
+#part B
+
+display binomialp(15,0,0.32)
+display binomialp(15,1,0.32)
+display binomialp(15,2,0.32)
+display binomialp(15,3,0.32)
+display binomialp(15,4,0.32)
+
+display 0.003073503+0.02169532+0.07146693+0.1457365+0.2057456
+
+#part C
+
+display binomialp(15,5,0.32)
+display binomialp(15,6,0.32)
+display binomialp(15,7,0.32)
+display binomialp(15,8,0.32)
+display binomialp(15,9,0.32)
+
+display 0.2130072+0.1670645+0.101081+0.04756755+0.01741034
+
+#part D
+
+display binomialp(15,6,0.32)
+display binomialp(15,7,0.32)
+display binomialp(15,8,0.32)
+display binomialp(15,9,0.32)
+
+display 0.1670645+0.101081+0.04756755+0.01741034
+
+#part E
+
+display binomialp(15,0,0.32)
+display binomialp(15,1,0.32)
+display binomialp(15,2,0.32)
+display binomialp(15,3,0.32)
+display binomialp(15,4,0.32)
+display binomialp(15,5,0.32)
+
+display 1 - (0.003073503+0.02169532+0.07146693+0.1457365+0.2057456+0.2130072)
+
+#Question 4.3.5
+
+# mean = p*n
+	
+display 15*.32
+
+#variance = p*n*(1-p)
+
+display 15*.32*.68
+
+
+## Stata run code
+
+
+display binomialp(20,3,0.24)
+display binomialp(20,0,0.24)
+display binomialp(20,1,0.24)
+display binomialp(20,2,0.24)
+display 1 -(0.004133061+0.02610354+0.07831063)
+
+display binomialp(20,0,0.24)
+display binomialp(20,1,0.24)
+display binomialp(20,2,0.24)
+display 0.004133061+0.02610354+0.07831063
+
+display binomialp(20,3,0.24)
+display binomialp(20,4,0.24)
+display binomialp(20,5,0.24)
+display binomialp(20,6,0.24)
+display binomialp(20,7,0.24)
+display 0.148378+0.199139+0.2012352+0.1588699+0.1003389
+
+display binomialp(15,2,0.32)
+
+display binomialp(15,0,0.32)
+display binomialp(15,1,0.32)
+display binomialp(15,2,0.32)
+display binomialp(15,3,0.32)
+display binomialp(15,4,0.32)
+display 0.003073503+0.02169532+0.07146693+0.1457365+0.2057456
+
+
+display binomialp(15,5,0.32)
+display binomialp(15,6,0.32)
+display binomialp(15,7,0.32)
+display binomialp(15,8,0.32)
+display binomialp(15,9,0.32)
+display 0.2130072+0.1670645+0.101081+0.04756755+0.01741034
+
+
+display binomialp(15,6,0.32)
+display binomialp(15,7,0.32)
+display binomialp(15,8,0.32)
+display binomialp(15,9,0.32)
+display 0.1670645+0.101081+0.04756755+0.01741034
+
+display binomialp(15,0,0.32)
+display binomialp(15,1,0.32)
+display binomialp(15,2,0.32)
+display binomialp(15,3,0.32)
+display binomialp(15,4,0.32)
+display binomialp(15,5,0.32)
+display 1 - (0.003073503+0.02169532+0.07146693+0.1457365+0.2057456+0.2130072)
+	
+display 15*.32
+
+display 15*.32*.68
