@@ -1,0 +1,89 @@
+# Probability Distribution
+
+#4.3.1
+
+#part A
+
+dbinom(3, size=20, prob=0.24)
+
+#part B
+
+dbinom(0, size=20, prob=0.24)
+dbinom(1, size=20, prob=0.24)
+dbinom(2, size=20, prob=0.24)
+
+1 -(0.004133061+0.02610354+0.07831063)
+
+#part C
+
+dbinom(0, size=20, prob=0.24)
+dbinom(1, size=20, prob=0.24)
+dbinom(2, size=20, prob=0.24)
+
+0.004133061+0.02610354+0.07831063
+
+#part D
+
+dbinom(3, size=20, prob=0.24)
+dbinom(4, size=20, prob=0.24)
+dbinom(5, size=20, prob=0.24)
+dbinom(6, size=20, prob=0.24)
+dbinom(7, size=20, prob=0.24)
+
+0.148378+0.199139+0.2012352+0.1588699+0.1003389
+
+
+#4.3.4
+
+#part A
+
+dbinom(3, size=15, prob=0.32)
+
+#part B
+
+dbinom(0, size=15, prob=0.32)
+dbinom(1, size=15, prob=0.32)
+dbinom(2, size=15, prob=0.32)
+dbinom(3, size=15, prob=0.32)
+dbinom(4, size=15, prob=0.32)
+
+0.003073503+0.02169532+0.07146693+0.1457365+0.2057456
+
+#part C
+
+dbinom(5, size=15, prob=0.32)
+dbinom(6, size=15, prob=0.32)
+dbinom(7, size=15, prob=0.32)
+dbinom(8, size=15, prob=0.32)
+dbinom(9, size=15, prob=0.32)
+
+0.2130072+0.1670645+0.101081+0.04756755+0.01741034
+
+#part D
+
+dbinom(6, size=15, prob=0.32)
+dbinom(7, size=15, prob=0.32)
+dbinom(8, size=15, prob=0.32)
+dbinom(9, size=15, prob=0.32)
+
+0.1670645+0.101081+0.04756755+0.01741034
+
+#part E
+
+dbinom(0, size=15, prob=0.32)
+dbinom(1, size=15, prob=0.32)
+dbinom(2, size=15, prob=0.32)
+dbinom(3, size=15, prob=0.32)
+dbinom(4, size=15, prob=0.32)
+dbinom(5, size=15, prob=0.32)
+
+1 - (0.003073503+0.02169532+0.07146693+0.1457365+0.2057456+0.2130072)
+
+#Question 4.3.5
+
+# mean = p*n
+	15*.32
+
+#variance = p*n*(1-p)
+	15*.32*.68
+
