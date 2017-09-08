@@ -1,0 +1,51 @@
+#Poisson Distribution
+
+#Question 4.4.1
+
+#part A
+
+	display poissonp(4,5)
+
+#part B
+
+	display 1-poisson(4,5)
+
+#part C
+
+	display 1-poissontail(4,5)
+
+#part D
+
+	display poissonp(4,7)
+	display poissonp(4,6)
+	display poissonp(4,5)
+
+	display .05954036+.10419563+.15629345
+
+
+#Question 4.4.5
+
+#part A
+
+	display poissonp(13,10)
+
+#part B
+
+	display 1-poisson(13,7)
+
+#part C
+
+	display poisson(13,12)
+
+#part D
+	
+	display poisson(13,15)
+	display poisson(13,8)
+
+	display .76360691+.09975791
+	
+
+#part E
+
+	display poisson(13,6)
+

@@ -1,0 +1,46 @@
+#Poisson Distribution
+
+#Question 4.4.1
+
+#part A
+
+	ppois(5, lambda=4)-ppois(4, lambda=4)
+
+#part B
+
+	1-(ppois(5, lambda=4))
+
+#part C
+
+	ppois(4, lambda=4)
+
+#part D
+
+	ppois(5, lambda=4)-ppois(4, lambda=4)+ppois(6, lambda=4)-ppois(5, lambda=4)+ppois(7, lambda=4)-ppois(6, lambda=4)
+
+
+#Question 4.4.5
+
+#part A
+
+	ppois(10, lambda=13)-ppois(9, lambda=13)
+
+#part B
+
+	1-ppois(7, lambda=13)
+
+#part C
+
+	ppois(12, lambda=13)
+
+#part D
+
+	ppois(15, lambda=13)-ppois(8, lambda=13)
+
+#part E
+
+	ppois(6, lambda=13)
+
+
+
+
