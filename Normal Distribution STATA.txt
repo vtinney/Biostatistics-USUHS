@@ -1,0 +1,13 @@
+#Normal Distribution Problems
+
+#Problem 4.6.2
+
+display normprob(2.64)-normprob(-2.87)
+
+#Problem 4.6.4
+
+display normprob(.55)
+
+#Problem 4.6.11
+
+display invnorm(.0055)

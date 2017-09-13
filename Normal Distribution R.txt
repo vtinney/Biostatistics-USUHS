@@ -1,0 +1,13 @@
+#Normal Distribution Problems
+
+#Problem 4.6.2
+
+pnorm(2.64)-pnorm(-2.87)
+
+#Problem 4.6.4
+
+pnorm(.55)
+
+#Problem 4.6.11
+
+qnorm(.0055)
