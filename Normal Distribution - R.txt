@@ -1,0 +1,98 @@
+#4.6.2
+
+#probability that a z picked at random between -2.87 and 2.64
+
+	pnorm(2.87)-pnorm(-2.87)
+
+#4.6.4
+
+# greater than 0.55
+
+	1-pnorm(.55)
+
+#4.6.11
+
+#< 0.0055
+
+	pnorm(.0055)
+
+#4.7.2
+
+sd = 50
+mean = 140
+
+#a. 200 or more
+
+	pnorm(200, mean = 140, sd = 50, lower.tail = FALSE)
+
+#b. less than 100
+
+	pnorm(100, mean = 140, sd = 50, lower.tail = TRUE)
+
+#c. between 100 and 200
+
+	pnorm(200, mean = 140, sd = 50, lower.tail = TRUE)-pnorm(100, mean = 140, sd = 50, lower.tail = TRUE)
+
+#d. between 200 and 250
+
+	pnorm(250, mean = 140, sd = 50, lower.tail = TRUE)-pnorm(200, mean = 140, sd = 50, lower.tail = TRUE)
+
+#e. population of 10,000 how many would you expect to have a ridge count of 200 or more
+
+	pnorm(200, mean = 140, sd = 50, lower.tail = FALSE)*10000
+
+
+#4.7.4
+sd = 20
+mean = 200
+
+#a. between 180 and 200
+
+	pnorm(200, mean = 200, sd = 20, lower.tail = TRUE)-pnorm(180, mean = 200, sd = 20, lower.tail = TRUE)
+
+#b. greater than 225
+
+	pnorm(225, mean = 200, sd = 20, lower.tail = FALSE)
+
+#c. between 30 and 60
+
+	pnorm(60, mean = 200, sd = 20, lower.tail = TRUE)-pnorm(30, mean = 200, sd = 20, lower.tail = TRUE)
+
+#d. greater than 90 
+
+	pnorm(90, mean = 200, sd = 20, lower.tail = FALSE)
+
+
+
+#21
+sd = 10
+mean = 60
+
+#a. greater than 75
+
+	pnorm(75, mean = 60, sd = 10, lower.tail = FALSE)
+
+#b. between 55 and 75
+
+	pnorm(75, mean = 60, sd = 10, lower.tail = TRUE)-pnorm(55, mean = 60, sd = 10, lower.tail = TRUE)
+
+#c. between 50 and 70
+
+	pnorm(70, mean = 60, sd = 10, lower.tail = TRUE)-pnorm(50, mean = 60, sd = 10, lower.tail = TRUE)
+
+#22
+
+sd =3
+mean = 10
+
+#a. less than 4
+
+	pnorm(4, mean = 10, sd = 3, lower.tail = TRUE)
+
+#b. more than 5
+
+	pnorm(5, mean = 10, sd = 3, lower.tail = FALSE)
+
+#c. less than 3
+
+	pnorm(3, mean = 10, sd = 3, lower.tail = TRUE)

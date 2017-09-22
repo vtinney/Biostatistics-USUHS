@@ -1,0 +1,101 @@
+#4.6.2
+
+#probability that a z picked at random between -2.87 and 2.64
+
+	display normal(2.87)-normal(-2.87)
+
+#4.6.4
+
+# greater than 0.55
+
+	display 1-
+normal(.55)
+
+#4.6.11
+
+#< 0.0055
+
+	display normal(.0055)
+
+#4.7.2
+
+sd = 50
+mean = 140
+
+#a. 200 or more
+
+	display 1-normprob((200-140)/50)
+
+#b. less than 100
+
+	display normprob((100-140)/50)
+
+#c. between 100 and 200
+
+	display normprob((200-140)/50)-normprob((100-140)/50)
+
+#d. between 200 and 250
+
+	display 1-normprob((250-140)/50)-normprob((200-140)/50)
+
+#e. population of 10,000 how many would you expect to have a ridge count of 200 or more
+
+	display normprob((200-140)/50)*10000
+
+
+#4.7.4
+sd = 20
+mean = 200
+
+#a. between 180 and 200
+
+	display normprob((200-200)/20)-normprob((200-180)/20)
+
+#b. greater than 225
+
+	display 1-normprob((225-200)/20)
+
+#c. between 30 and 60
+
+	display normprob((60-200)/20)-normprob((30-200)/20)
+
+#d. greater than 90 
+
+	display 1-normprob((90-200)/20)
+
+
+#21
+sd = 10
+mean = 60
+
+#a. greater than 75
+
+	display 1-normprob((75-60)/10)
+
+#b. between 55 and 75
+
+	display normprob((75-60)/10)-normprob((55-60)/10)
+
+#c. between 50 and 70
+
+	display normprob((70-60)/10)-normprob((50-60)/10)
+
+#22
+
+sd =3
+mean = 10
+
+#a. less than 4
+
+	display normprob((4-10)/3)
+	
+
+#b. more than 5
+
+	display 1-normprob((5-10)/3)
+
+#c. less than 3
+
+	display normprob((3-10)/3)
+
+
