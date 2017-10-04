@@ -1,0 +1,87 @@
+#Sampling Distribution Homework
+#5.3.1, 5.3.2, 5.3.3, 5.3.4, 5.3.9, Rev Questions 15 21
+
+#5.3.1
+#mean = 204, SD = 44, n = 50
+
+	44/sqrt(50) # = 6.22
+			
+#5.3.2
+
+#mean = 183, SD = 37, n = 60
+
+	37/sqrt(60) # = 4.78
+
+# part a. - falls between 170 and 195
+											
+	(170-183)/4.78 # = -2.72
+	(195-183)/4.78 # = 2.51	
+	
+	pnorm(2.51)-pnorm(-2.72)
+
+# part b. - below 175
+
+	(175-183)/4.78 # = -1.67
+	pnorm(-1.67)				
+
+# part c - greater than 190
+
+	(190-183)/4.78 # = 1.46
+	1-pnorm(1.46)
+
+#5.3.3
+
+#mean = 5.7, SD = 1, n =9
+
+#part a - greater than 6
+	1/sqrt(9) # = .33
+	(6-5.7)/.33 # = .909
+	1-pnorm(.909)
+
+# part b - between 5 and 6
+
+
+	(5-5.7)/.33 # = -2.12
+	(6-5.7)/.33 # = .91
+	pnorm(.91)-pnorm(-2.12)
+
+#part c - less than 5.2
+
+	(5.2-5.7)/.33 # = -1.52
+	pnorm(-1.52)
+	
+#5.3.4
+#mean =721, SD = 454, n = 50
+
+#part a - greater than 800
+
+	454/sqrt(50)
+	(800-721)/64.2 # = 1.23
+	1-pnorm(1.23)
+	
+#part b - less than 700
+
+	(700-721)/64.2 # = -.33
+	pnorm(-.33)
+
+# part c - between 700 and 850
+
+	(850-721)/64.2 # = 2.01
+	pnorm(2.01)-pnorm(-.33)
+
+#5.3.9
+#population is (6, 8, 10, 12, 14)
+
+sample1 <- c(6, 8, 10, 12, 14)
+
+5*4*3*2*1/(3*2*1*2) # = 10
+
+mean(sample1)
+
+# 'pop. var.' where n > 1
+n=length(sample1); var(sample1)*(n-1)/n
+
+# 'pop. var.' where n > 0
+mean((sample1-mean(sample1))^2)
+
+	
