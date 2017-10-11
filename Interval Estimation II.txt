@@ -1,0 +1,28 @@
+#Internval Estimation Page 30-13 - R
+
+group1 <- c(134, 146, 104, 119, 124, 161, 107, 83, 113, 129, 97, 123)
+group2 <- c(70, 118, 101, 85, 107, 132, 94)
+
+t.test(group1, group2)
+
+#Internval Estimation Page 30-13 - STATA
+
+edit
+
+# enter data
+
+ttest(weight), by(group)
+
+#Internval Estimation Page 38 - R
+
+hindleg <- c(142, 140, 144, 144, 142, 146, 149, 150, 142, 148)
+foreleg <- c(138, 136, 147, 139, 143, 141, 143, 145, 136, 146)
+t.test(hindleg, foreleg, paired=TRUE)
+
+#Internval Estimation Page 38 - STATA
+
+edit
+
+#enter data
+
+ttest hindleg == foreleg
