@@ -1,0 +1,104 @@
+#6.4.7
+
+# cases: n1 = 12, x1 = 11.1, s1 = 1.5, controls: n2 = 12, x2 = 7.8, sd = 2
+
+#part a - construct a 90% confidence interval estimate for the difference in population means (exampmle 5)
+
+#formula = (x1 - x2) +/- t(90%)*sp*sqrt(1/n1) + (1/n2)
+
+# step 1: sp = [sqrt(n1-1)*s1^2 + (n2-1)*s2^2]/(n1+n2-2)
+
+((11*2.25)+(11*4))/22
+
+sqrt(3.215)
+
+#sp = 1.77
+#df = 20, 90% CI= 1-alpha/2 = .95 (look up in table) = 1.7171
+
+#input into formula = (x1 - x2) +/- t(90%)*sp*sqrt(1/n1) + (1/n2)
+
+(11.1-7.8)+((1.7171*1.77)*(sqrt(1/12)+(1/12)))
+
+(11.1-7.8)-((1.7171*1.77)*(sqrt(1/12)+(1/12)))
+
+# answer 2.1, 4.5
+
+#part b - construct a 95% confidence interval for the difference in population means
+
+(11.1-7.8)+((1.7171*2.0739)*(sqrt(1/12)+(1/12)))
+
+(11.1-7.8)-((1.7171*2.0739)*(sqrt(1/12)+(1/12)))
+
+#part c - construct a 99% confidence interval for the difference in population means
+
+(11.1-7.8)+((1.7171*2.8188)*(sqrt(1/12)+(1/12)))
+
+(11.1-7.8)-((1.7171*2.8188)*(sqrt(1/12)+(1/12)))
+
+
+#6.4.8
+
+# n = 11, mean = 26, sd = 5, n =14, mean = 21, sd =6
+
+#step one, sp
+
+((10*25)+(13*36)/(11+14-2))
+
+sqrt(31.21)
+
+# sp = 5.59
+
+# part a - 90% confidence interval
+
+(26-21)+((1.7139*5.59)*(sqrt(1/11)+(1/11)))
+
+(26-21)-((1.7139*5.59)*(sqrt(1/11)+(1/11)))
+
+# part b - 95% confidence interval
+
+(26-21)+((2.0687*5.59)*(sqrt(1/11)+(1/11)))
+
+(26-21)-((2.0687*5.59)*(sqrt(1/11)+(1/11)))
+
+# part c - 
+
+(26-21)+((2.8073*5.59)*(sqrt(1/11)+(1/11)))
+
+(26-21)-((2.8073*5.59)*(sqrt(1/11)+(1/11)))
+
+#6.4.9
+
+# n = 20, mean = 7, sd = 2, n = 24, mean = 36, sd = 10 # case 6
+
+# part a - construct a 90% confidence interval for difference in population means
+
+# t'1-alpha/2 = (w1t1+w2t2)/(w1+w2)
+
+# t1 = 19 df, t2 = 23 df
+
+#w1 = s1^2/n1, w2 = s2^2/n2
+
+4/20 #.2
+100/24 # 4.17
+
+# t1 = 19 df, t.95 = 1.7291
+# t2 = 23, t.95 = 1.7139
+
+((.2*1.7291)+(4.17*1.7139))/(.2+4.17) # 1.7146
+
+(7-36)+((1.7146*sqrt(.2+4.17))
+(7-36)-((1.7146*sqrt(.2+4.17))
+
+# part b - construct a 95% confidence interval for the difference in population means
+
+(7-36)+((2.0698*sqrt(.2+4.17))
+(7-36)-((2.0698*sqrt(.2+4.17))
+
+# part c - construct a 99% confidence interval for the difference in population means
+
+(7-36)+((2.8098*sqrt(.2+4.17))
+(7-36)-((2.8098*sqrt(.2+4.17))
+
+
+
+
