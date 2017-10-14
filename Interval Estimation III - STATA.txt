@@ -1,0 +1,72 @@
+#Interval Estimation III and IV
+
+#6.5.1
+
+#63 of 472 patients have VAP
+
+#p =  .1335
+	display 63/472
+
+#construct a 95% confidence interval for p
+
+	display 0.1335+((1.96)*(sqrt((0.1135*.8665)/472)))
+	display 0.1335-((1.96)*(sqrt((0.1135*.8665)/472)))
+
+#6.6.2
+
+#109 of 138 cases wanted to be screened; 120 of 136 controls wanted to be screened
+
+#p1-p2
+
+	display (120/136)-(109/138)
+
+# p = .0925
+
+	display 0.0925+((1.96)*(sqrt((((120/136)*(16/136))/136)+(((109/138)*(29/138))/138))))
+	display 0.0925-((1.96)*(sqrt((((120/136)*(16/136))/136)+(((109/138)*(29/138))/138))))
+
+#6.6.4
+
+#24 of 50 subjects receive usual care, 50 of 75 receive collaborative care
+
+	display (50/75)-(24/50)
+#p = .1867
+
+# construct a 90% confidence interval
+
+	display 0.1867+((1.645)*(sqrt((((50/75)*(25/75))/75)+(((24/50)*(26/50))/50))))
+	display 0.1867-((1.645)*(sqrt((((50/75)*(25/75))/75)+(((24/50)*(26/50))/50))))
+	
+
+#6.8.1
+
+#What sample size required to estimate within .03 with 95% CI assuming p is .2?
+
+#n = z^2*p*q/d^2
+
+	display ((1.96^2)*(.2)*(.8))/.03^2
+
+# if data for p not available and p=.5 was used then:
+
+	display ((1.96^2)*(.5)*(.5))/.03^2
+
+#6.10.2
+
+# 33 suicidal had ICS sd of 8.4 which 32 non-suicidal had an sd of 6
+
+#part a construct a 99% confidence interval of the ratio of population variances
+
+# (s1^2/s2^2)*F 1-alpha/2, (s1^2/s2^2)/F alpha/2
+
+#using a complete table
+
+	display (70.56/36)/2.5723 # .762
+	display (70.56/36)/0.3911 # 5.011
+
+#using the F table in the book
+
+	display (70.56/36)/2.63 # .745
+	display (70.56/36)/0.38 # 5.16
+
+
+
