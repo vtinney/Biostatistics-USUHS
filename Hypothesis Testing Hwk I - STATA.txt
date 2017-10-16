@@ -1,0 +1,57 @@
+#Hypothesis Testing I
+
+#7.2.1
+
+#Escobar et al. (A-3) performed a study to validate a translated version of the Western Ontario and
+#McMaster Universities Osteoarthritis Index (WOMAC) questionnaire used with Spanish-speaking
+#patients with hip or knee osteoarthritis. For the 76 women classified with severe hip pain, the
+#WOMAC mean function score (on a scale from 0 to 100 with a higher number indicating less
+#function) was 70.7 with a standard deviation of 14.6. We wish to know if we may conclude that the
+#mean function score for a population of similar women subjects with severe hip pain is less than 75.
+#Let alpha :01.
+
+# z = Xbar-mean / s*sqrt(n)
+
+	display (70.7-75)/(14.6/sqrt(76))
+
+	#-2.57, less than or equal to -2.33 (alpha 0.1), therefore reject the null
+
+
+#7.2.2
+
+#A study by Thienprasiddhi et al. (A-4) examined a sample of 16 subjects with open-angle glaucoma
+#and unilateral hemifield defects. The ages (years) of the subjects were:
+
+	edit
+		#enter data (62, 62, 68, 48, 51, 60, 51, 57, 57, 41, 62, 50, 53, 34, 62, 61)
+	
+	rename var1 ages
+	summarize ages, detail
+	display (54.9375-60)/(8.8729/sqrt(16)) 
+	
+		#-2.28
+		#alpha 0.5 = -1.7530, so we reject the null
+
+
+#Can we conclude that the mean age of the population from which the sample may be presumed to
+#have been drawn is less than 60 years? Let alpha :05
+
+#7.2.6
+
+#Nine laboratory animals were infected with a certain bacterium and then immunosuppressed. The
+#mean number of organisms later recovered from tissue specimens was 6.5 (coded data) with a
+#standard deviation of .6. Can one conclude from these data that the population mean is greater than 6?
+#Let alpha:05. What assumptions are necessary?
+
+	display (6.5-6)/(0.6/sqrt(9)) 
+		#2.5
+		#alpha 1.8595, so we reject the null
+
+#7.2.9	
+
+#A survey of 100 similar-sized hospitals revealed a mean daily census in the pediatrics service of 27
+#with a standard deviation of 6.5. Do these data provide sufficient evidence to indicate that the
+#population mean is greater than 25? Let alpha:05
+
+	display (27-25)/(6.5/sqrt(100)) #3.08
+		#3.08 greater than 1.645, reject the null
