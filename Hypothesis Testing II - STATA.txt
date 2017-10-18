@@ -1,0 +1,64 @@
+#Hypothesis Testing II
+
+#7.9.3
+
+#Construct and graph the power function: H0 = < 4.25 Ha > 4.25, n = 81, simga = 1.8, alpha = 0.01
+
+#Alternative =5
+
+#Z = 1-0.01 = .99
+
+qnorm(.99) #2.33
+
+2.33*(1.8/sqrt(81))+4.25 #4.716
+
+(4.716-5)/(1.8/sqrt(81)) #-1.42
+
+display normprob(-1.42) #.0778
+
+display 1-.0778 #.9222 = POWER
+
+
+#Alternative =4.25
+
+#Z = 1-0.01 = .99
+
+display invnorm(.99) #2.33
+
+display 2.33*(1.8/sqrt(81))+4.25 #4.716
+
+display (4.716-4.25)/(1.8/sqrt(81)) #-1.42
+
+display normprob(2.33) #.99
+
+display 1-.99 #.01 = POWER
+
+
+#Alternative =4.75
+
+#Z = 1-0.01 = .99
+
+display invnorm(.99) #2.33
+
+display 2.33*(1.8/sqrt(81))+4.25 #4.716
+
+display (4.716-4.75)/(1.8/sqrt(81)) #-.17
+
+display normprob(-.17) #.4325
+
+display 1-.4325 #.5675 = POWER
+
+
+#Alternative =5.25
+
+#Z = 1-0.01 = .99
+
+display invnorm(.99) #2.33
+
+display 2.33*(1.8/sqrt(81))+4.25 #4.716
+
+display (4.716-5.25)/(1.8/sqrt(81)) #-2.67
+
+display normprob(-2.67) #.00379
+
+display 1-.00379 #.9962 = POWER
