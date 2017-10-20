@@ -1,0 +1,102 @@
+#Homework Hypothesis Testing III
+
+#7.7.2
+
+#Robinson et al. (A-29) studied nine subjects who underwent baffle procedure for transposition of the
+#great arteries (TGA). At baseline, the systemic vascular resistance (SVR) (measured in WU  m2)
+#values at rest yielded a standard deviation of 28. Can we conclude from these data that the SVR
+#variance of a population of similar subjects with TGA is not 700? Let alpha equal .10.
+
+	#X2 = (n-1)*s^2/sigma^2
+
+	qchisq(.95, df = 8) #15.507
+	qchisq(.05, df =8) #2.733
+
+	(8*784)/700 #8.96
+
+	#between 2.733 and 15.507, do not reject the null
+
+#7.7.3
+
+#Vital capacity values were recorded for a sample of 10 patients with severe chronic airway
+#obstruction. The variance of the 10 observations was .75. Test the null hypothesis that the population
+#variance is 1.00. Let alpha equal .05
+
+	qchisq(.975, df = 9) #19.0277
+	qchisq(.025, df = 9) #2.7
+
+	(9*.75)/1
+
+	#6.75 is between 2.7 and 19.023, do not reject the null
+
+#7.3.1
+
+#Subjects in a study by Dabonneville et al. (A-9) included a sample of 40 men who claimed to engage
+#in a variety of sports activities (multisport). The mean body mass index (BMI) for these men
+#was 22.41 with a standard deviation of 1.27. A sample of 24 male rugby players had a mean BMI of
+#27.75 with a standard deviation of 2.64. Is there sufficient evidence for one to claim that, in general,
+#rugby players have a higher BMI than the multisport men? Let alpha equal .01.
+
+	# t = (x1-x2) / sp* ssqrt((1/n1) + (1/n2))
+	# sp = sqrt(((n1-1)*s1^2 + (n2-1)*s2^2)/(n1+n2-2))
+
+	sqrt(((40-1)*1.6129+(24-1)*6.9696)/(40+24-2)) #1.89
+
+	(22.41-27.75)/(1.89*sqrt((1/40)+(1/24))) #-10.94
+
+	qt(.01, 62) #-2.38
+
+	#since -10.9 is greater than -2.657, the p value is less than .005, reject the null
+
+#7.3.7
+
+#Cortisol level determinations were made on two samples of women at childbirth. Group 1 subjects
+#underwent emergency cesarean section following induced labor. Group 2 subjects delivered by either
+#cesarean section or the vaginal route following spontaneous labor. The sample sizes, mean cortisol
+#levels, and standard deviations were as follows:
+
+#Sample n   x   s
+#1 	10 435 65
+#2 	12 645 80
+
+#Do these data provide sufficient evidence to indicate a difference in the mean cortisol levels in the
+#populations represented? Let alpha equal .05.
+
+	# t = (x1-x2) / sp* ssqrt((1/n1) + (1/n2))
+	# sp = sqrt(((n1-1)*s1^2 + (n2-1)*s2^2)/(n1+n2-2))
+
+	sqrt(((10-1)*4225+(12-1)*6400)/(10+12-2)) #73.62
+
+	(435-645)/(73.63*sqrt((1/10)+(1/12))) #-6.66
+
+	qt(.975, 20) #2.08
+
+	#since -6.66 is greater than 2.08, the p value is less than .005, reject the null
+
+
+#7.4.1
+#Ellen Davis Jones (A-15) studied the effects of reminiscence therapy for older women with
+#depression. She studied 15 women 60 years or older residing for 3 months or longer in an assisted
+#living long-term care facility. For this study, depression was measured by the Geriatric Depression
+#Scale (GDS). Higher scores indicate more severe depression symptoms. The participants received
+#reminiscence therapy for long-term care, which uses family photographs, scrapbooks, and personal
+#memorabilia to stimulate memory and conversation among group members. Pre-treatment and posttreatment
+#depression scores are given in the following table. Can we conclude, based on these data,
+#that subjects who participate in reminiscence therapy experience, on average, a decline in GDS
+#depression scores? Let alpha equal .01.
+
+#Pre–GDS: 12 10 16 2 12 18 11 16 16 10 14 21 9 19 20
+3Post–GDS: 11 10 11 3 9 13 8 14 16 10 12 22 9 16 18
+
+	pre <- c(12, 10, 16, 2, 12, 18, 11, 16, 16, 10, 14, 21, 9, 19, 20)
+	post <- c(11, 10, 11, 3, 9, 13, 8, 14, 16, 10, 12, 22, 9, 16, 18)
+	d <- c(pre-post)
+	mean(d) #1.6
+	sd(d) #1.95
+
+	qt(.99, 14) #2.64
+	1.6/(1.95/sqrt(15)) #3.17
+
+	#3.17 is greater than 2.624, reject the null
+
+
