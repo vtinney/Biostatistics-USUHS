@@ -1,0 +1,22 @@
+#Page 64 Hypothesis Testing II - Power Curves - R
+
+install.packages("pwr")
+library(pwr)
+delta <- 20
+sigma <- 40
+d <- delta/sigma
+pwr.t.test(d=d, sig.level=.05, power = .80, type = 'two.sample')
+
+plot(pwr.t.test(d=.5, sig.level=.05, power = .80, type = 'two.sample'))
+plot(pwr.t.test(d=.125, sig.level=.05, power = .80, type = 'two.sample'))
+plot(pwr.t.test(d=.25, sig.level=.05, power = .80, type = 'two.sample'))
+plot(pwr.t.test(d=.75, sig.level=.05, power = .80, type = 'two.sample'))
+plot(pwr.t.test(d=1.25, sig.level=.05, power = .80, type = 'two.sample'))
+plot(pwr.t.test(d=1, sig.level=.05, power = .80, type = 'two.sample'))
+
+
+#Page 64 Hypothesis Testing II - Power Curves - STATA
+
+ssc install powersim
+powersim , b(.125 .25 .5 .75 1 1.25) pos(1) alpha(0.05) sample(10(10)300) family(gaussian 1) link(identity) cov1(x1 _bp block 2) dofile(example1_dofile, replace) : reg y x1
+powersimplot
