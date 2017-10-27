@@ -1,0 +1,40 @@
+#Hypothesis Testing IV - R
+
+#7.5.2
+
+#In an article in the journal Health and Place, Hui and Bell (A-22) found that among 2428 boys ages
+#7 to 12 years, 461 were overweight or obese. On the basis of this study, can we conclude that more
+#than 15 percent of the boys ages 7 to 12 in the sampled population are obese or overweight? Let
+#alpha = .05.
+
+display (.1899-.15)/(sqrt((.15*.85)/2428))
+
+#greater than 1.645, reject the null
+
+#7.6.2
+
+#Landolt et al. (A-26) examined rates of posttraumatic stress disorder (PTSD) in mothers and fathers.
+#Parents were interviewed 5 to 6 weeks after an accident or a new diagnosis of cancer or diabetes
+#mellitus type I for their child. Twenty-eight of the 175 fathers interviewed and 43 of the 180 mothers
+#interviewed met the criteria for current PTSD. Is there sufficient evidence for us to conclude that
+#fathers are less likely to develop PTSD than mothers when a child is traumatized by an accident,
+#cancer diagnosis, or diabetes diagnosis? Let alpha = .05.
+
+display (-.0789)/sqrt((.2*.8)/175+(.2*.8)/180)
+
+#less than -1.645, reject the null
+
+#7.8.4
+#In an experiment to assess the effects on rats of exposure to cigarette smoke, 11 animals were
+#exposed and 11 control animals were not exposed to smoke from unfiltered cigarettes. At the end
+#of the experiment, measurements were made of the frequency of the ciliary beat (beats/min at
+#20C) in each animal. The variance for the exposed group was 3400 and 1200 for the unexposed
+#group. Do these data indicate that in the populations represented the variances are different?
+#Let alpha = .05.
+
+#F statistic for .975, df1=10, df2=10 is 3.72
+# F statistic for .025, df1=10, df2=10 is 0.269
+
+display 3400/1200 #2.83
+
+#2.83 is between 3.72 and .269 so we do not reject the null
