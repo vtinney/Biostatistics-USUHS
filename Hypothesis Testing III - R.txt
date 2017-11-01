@@ -46,7 +46,7 @@
 
 	qt(.01, 62) #-2.38
 
-	#since -10.9 is greater than -2.657, the p value is less than .005, reject the null
+	#since -10.9 is greater than -2.657, the p value is less than .01, reject the null
 
 #7.3.7
 
@@ -85,8 +85,8 @@
 #that subjects who participate in reminiscence therapy experience, on average, a decline in GDS
 #depression scores? Let alpha equal .01.
 
-#Pre–GDS: 12 10 16 2 12 18 11 16 16 10 14 21 9 19 20
-3Post–GDS: 11 10 11 3 9 13 8 14 16 10 12 22 9 16 18
+#Preâ€“GDS: 12 10 16 2 12 18 11 16 16 10 14 21 9 19 20
+3Postâ€“GDS: 11 10 11 3 9 13 8 14 16 10 12 22 9 16 18
 
 	pre <- c(12, 10, 16, 2, 12, 18, 11, 16, 16, 10, 14, 21, 9, 19, 20)
 	post <- c(11, 10, 11, 3, 9, 13, 8, 14, 16, 10, 12, 22, 9, 16, 18)
@@ -98,5 +98,18 @@
 	1.6/(1.95/sqrt(15)) #3.17
 
 	#3.17 is greater than 2.624, reject the null
+
+#7.5.2
+
+#461 of 2428 boys studied were obese - can we conclude that more than 15% of the population of boys are obsese, assuming alpha - 0.05
+#critical value
+
+#sample proportion - one tailed
+461/2428 #.1899 - example of case 9
+
+# phat-p0/sqrt(p0q0/n)
+
+(.1899-.15)/sqrt((.15*.85)/2428) #5.06
+
 
 
